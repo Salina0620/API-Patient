@@ -117,7 +117,7 @@ class PatientController extends Controller
         ]);
 
         $patient = new Patient();
-        $patient->user_id = $request->user()->id; // Assuming user is authenticated
+        $patient->user_id = $request->user()->id; 
         $patient->age = $request->age;
         $patient->gender = $request->gender;
         $patient->address = $request->address;
