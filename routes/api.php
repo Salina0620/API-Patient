@@ -130,3 +130,6 @@ Route::put('/patients/{id}', [PatientController::class, 'update']);
  * )
  */
 Route::delete('/patients/{id}', [PatientController::class, 'destroy']);
+
+Route::post('register',[AuthController::class,'register']);
+Route::post('login',[AuthController::class,'login']);
